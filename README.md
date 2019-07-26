@@ -2,9 +2,13 @@
 - A typescript library that generates a tree based on a json
 
 # setup
-import hierarchyTreeGenerator from 'hierarchy-tree-generator';
+Import librabry as below:
+  import hierarchyTreeGenerator from 'hierarchy-tree-generator';
 
-# graphic
+and call it with your #data structure
+  hierarchyTreeGenerator(children);
+
+# graphic example
 ```
 Warehouse Manager
 ├── Warehouse Officer
@@ -13,7 +17,7 @@ Warehouse Manager
 └── Warehouse Information Officer
 ```
 
-# data structure
+# data structure found in data.json
 ```
 [{
   "name": "Warehouse Manager",
