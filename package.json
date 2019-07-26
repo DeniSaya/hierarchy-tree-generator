@@ -1,6 +1,6 @@
 {
   "name": "hierarchy-tree-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A typescript library that generates a tree based on a json",
   "main": "dist/hierarchy-tree-generator.js",
   "types": "dist/index.d.ts",

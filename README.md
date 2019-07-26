@@ -5,7 +5,7 @@
 Import librabry as below:
   import hierarchyTreeGenerator from 'hierarchy-tree-generator';
 
-and call it with your #data structure
+and call it with your #data structure:
   hierarchyTreeGenerator(children);
 
 # graphic example
@@ -17,7 +17,7 @@ Warehouse Manager
 └── Warehouse Information Officer
 ```
 
-# data structure found in data.json
+# data structure
 ```
 [{
   "name": "Warehouse Manager",
