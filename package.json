@@ -1,0 +1,32 @@
+{
+  "name": "hierarchy-tree-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/hierarchy-tree-generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open",
+    "server": "node server.js",
+    "watch": "webpack --watch",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.qubiz.com:denisa.pop/hierarchy-tree-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.1.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

@@ -1,0 +1,19 @@
+[{
+  "name": "Warehouse Manager",
+  "subtree": [
+    {
+      "name": "Warehouse Officer",
+      "subtree": [{
+        "name": "Cleaner",
+        "subtree": []
+      }, {
+        "name": "Day Laborers",
+        "subtree": []
+      }]
+    },
+    {
+      "name": "Warehouse Information Officer",
+      "subtree": []
+    }
+  ]
+}]
