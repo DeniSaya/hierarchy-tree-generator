@@ -4,7 +4,7 @@
     "module": "commonjs",
     "target": "es5",
     "lib": [ "es2015", "dom" ],
-    "outDir": "lib",
+    "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
@@ -12,11 +12,9 @@
     "declaration": true,
     "jsx": "react"
   },
-  "files": [
-    "./src/index.ts"
-  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ],
   "compileOnSave": false,
   "buildOnSave": false
