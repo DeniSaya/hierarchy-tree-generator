@@ -1,6 +1,9 @@
 # hierarchy-tree-generator
 - A typescript library that generates a tree based on a json
 
+# setup
+import hierarchyTreeGenerator from 'hierarchy-tree-generator';
+
 # graphic
 ```
 Warehouse Manager

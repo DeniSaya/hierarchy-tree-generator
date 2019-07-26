@@ -4,25 +4,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.ts',
   devtool: 'inline-source-map',
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
+      }
     ]
   },
   devServer: {
     contentBase: './dist'
+  },
+  performance: {
+    hints: false
   },
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ]
@@ -31,6 +27,7 @@ module.exports = {
     filename: 'hierarchy-tree-generator.js',
     library: 'hierarchyTreeGenerator',
     libraryTarget: 'umd',
+    globalObject: 'this',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },

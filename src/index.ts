@@ -1,6 +1,4 @@
-const data = require('./data.json');
-
-function getIndent(lvl: number, index: any, last: any) {
+const getIndent = (lvl: number, index: any, last: any) => {
   if (lvl === 1 && index !== last) {
     return '&#8866;';
   } else if (lvl > 1 && index !== last) {
@@ -14,7 +12,7 @@ function getIndent(lvl: number, index: any, last: any) {
 
 let lvl = 0;
 
-export function generateTree(children: any, subtree: boolean = false) {
+export default function generateTree(children: any, subtree: boolean = false) {
   children.forEach((child: any, index: any, self: any) => {
     const name = document.createElement("div");
 
