@@ -1,12 +1,18 @@
 # hierarchy-tree-generator
-- A typescript library that generates a tree based on a json
+hierarchy-tree-generator is a typescript library that generates a graphic based on a json.
 
-# setup
-Import librabry as below:
-  import hierarchyTreeGenerator from 'hierarchy-tree-generator';
+## Installation
 
-and call it with your #data structure:
-  hierarchyTreeGenerator(children);
+```bash
+npm i hierarchy-tree-generator
+```
+## Usage
+
+```python
+import hierarchyTreeGenerator from 'hierarchy-tree-generator';
+
+hierarchyTreeGenerator(children)
+```
 
 # graphic example
 ```
@@ -17,7 +23,7 @@ Warehouse Manager
 └── Warehouse Information Officer
 ```
 
-# data structure
+# data structure example
 ```
 [{
   "name": "Warehouse Manager",

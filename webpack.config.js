@@ -37,7 +37,6 @@ module.exports = {
     })
   ],
   externals: [
-    // Everything that starts with "library/"
     /^library\/.+$/
   ]
 };
