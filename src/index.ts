@@ -14,7 +14,7 @@ function getIndent(lvl: number, index: any, last: any) {
 
 let lvl = 0;
 
-function generateTree(children: any, subtree: boolean = false) {
+export function generateTree(children: any, subtree: boolean = false) {
   children.forEach((child: any, index: any, self: any) => {
     const name = document.createElement("div");
 
@@ -38,5 +38,3 @@ function generateTree(children: any, subtree: boolean = false) {
     }
   });
 }
-
-export default generateTree(data);
