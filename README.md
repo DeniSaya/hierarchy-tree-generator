@@ -1,5 +1,5 @@
 # hierarchy-tree-generator
-- typescript library
+- A typescript library that generates a tree based on a json
 
 # graphic
 ```
