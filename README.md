@@ -17,10 +17,10 @@ hierarchyTreeGenerator(children)
 # graphic example
 ```
 Warehouse Manager
-├── Warehouse Officer
-│   ├── Cleaner
-│   └── Day Laborers
-└── Warehouse Information Officer
+├─ Warehouse Officer
+│ ├─ Cleaner
+│ └─ Day Laborers
+└─ Warehouse Information Officer
 ```
 
 # data structure example
