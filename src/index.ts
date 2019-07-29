@@ -1,12 +1,12 @@
 const getIndent = (lvl: number, index: any, last: any) => {
   if (lvl === 1 && index !== last) {
-    return '&#8866;';
+    return '├──';
   } else if (lvl > 1 && index !== last) {
-    return `&#124;${"  ".repeat(lvl)}&#8866;`;
+    return `│${"  ".repeat(lvl)}├──`;
   } else if (lvl > 1 && index === last) {
-    return `&#124;${"  ".repeat(lvl)}&#8735;`;
+    return `│${"  ".repeat(lvl)}└──`;
   } else if (lvl === 1 && index === last) {
-    return '&#8735;';
+    return '└──';
   }
 }
 
