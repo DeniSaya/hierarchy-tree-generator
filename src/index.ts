@@ -17,9 +17,9 @@ export default function generateTree(children: any, subtree: boolean = false) {
     const name = document.createElement("div");
 
     if (subtree && lvl) {
-      name.innerHTML = getIndent(lvl, index, self.length - 1) + child.name;
+      name.innerText = getIndent(lvl, index, self.length - 1) + child.name;
     } else {
-      name.innerHTML = child.name;
+      name.innerText = child.name;
     }
 
     document.body.appendChild(name);
