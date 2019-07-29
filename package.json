@@ -1,6 +1,6 @@
 {
   "name": "hierarchy-tree-generator",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A typescript library that generates a tree based on a json",
   "main": "dist/hierarchy-tree-generator.js",
   "types": "dist/index.d.ts",
@@ -11,10 +11,15 @@
     "watch": "webpack --watch",
     "build": "webpack --config webpack.config.js"
   },
-  "keywords": ["webpack", "typescript", "library"],
+  "keywords": [
+    "webpack",
+    "typescript",
+    "library"
+  ],
   "author": "DeniSaya",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "express": "^4.17.1",
     "html-webpack-plugin": "^3.2.0",
     "ts-loader": "^6.0.4",

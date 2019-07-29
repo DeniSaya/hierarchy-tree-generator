@@ -1,12 +1,12 @@
 const getIndent = (lvl: number, index: any, last: any) => {
   if (lvl === 1 && index !== last) {
-    return '├─';
+    return '├─ ';
   } else if (lvl > 1 && index !== last) {
-    return `│${"  ".repeat(lvl)}├─`;
+    return `│ ${"  ".repeat(lvl)}├─ `;
   } else if (lvl > 1 && index === last) {
-    return `│${"  ".repeat(lvl)}└─`;
+    return `│ ${"  ".repeat(lvl)}└─ `;
   } else if (lvl === 1 && index === last) {
-    return '└─';
+    return '└─ ';
   }
 }
 
@@ -16,6 +16,7 @@ export default function generateTree(children: any, subtree: boolean = false) {
   children.forEach((child: any, index: any, self: any) => {
     const name = document.createElement("div");
     name.style.paddingBottom = 5 + 'px';
+    name.style.fontFamily = "Courier";
 
     if (subtree && lvl) {
       name.innerText = getIndent(lvl, index, self.length - 1) + child.name;
